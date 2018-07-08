@@ -1,7 +1,7 @@
 class Ship
   attr_accessor :name, :type, :booty
 
-  SHIPS = []
+  @@ships = []
 
   def initialize(params)
     @name = params[:name]
@@ -15,6 +15,6 @@ class Ship
   end
 
   def self.clear
-    SHIPS.clear
+    @@ships.clear
   end
 end
